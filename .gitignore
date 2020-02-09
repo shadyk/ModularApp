@@ -15,6 +15,7 @@ DerivedData/
 Crypto/Obfuscator.swift
 Crypto/CryptoFunctions.swift
 Crypto/CryptoPasswordDecoder.swift
+.gitignore
 *.moved-aside
 *.pbxuser
 !default.pbxuser

@@ -8,7 +8,6 @@
 
 import Foundation
 
-import SKAPI
 import SKAuth
 
 class RemoteLoginAction : LoginAction {
