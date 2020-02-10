@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import API
+@testable import SKAPI
 
 class APITests: XCTestCase {
 

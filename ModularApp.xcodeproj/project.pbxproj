@@ -56,6 +56,8 @@
 		E68DADE223E83E8B00E0C793 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DADDF23E83E8A00E0C793 /* Obfuscator.swift */; };
 		E68DADE623E86E4E00E0C793 /* CryptoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DADE423E86E4E00E0C793 /* CryptoFunctions.swift */; };
 		E68DADE723E86E4E00E0C793 /* CryptoPasswordDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DADE523E86E4E00E0C793 /* CryptoPasswordDecoder.swift */; };
+		E6BCE4EA23F0464A0097D297 /* OTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BCE4E923F0464A0097D297 /* OTPService.swift */; };
+		E6BCE4ED23F140BB0097D297 /* LoginServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BCE4EB23F13E010097D297 /* LoginServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +244,8 @@
 		E68DADDF23E83E8A00E0C793 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		E68DADE423E86E4E00E0C793 /* CryptoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoFunctions.swift; sourceTree = "<group>"; };
 		E68DADE523E86E4E00E0C793 /* CryptoPasswordDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoPasswordDecoder.swift; sourceTree = "<group>"; };
+		E6BCE4E923F0464A0097D297 /* OTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPService.swift; sourceTree = "<group>"; };
+		E6BCE4EB23F13E010097D297 /* LoginServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTest.swift; sourceTree = "<group>"; };
 		E83198E6A440D910E17603E5 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA61BCE7C2A882968AEF1BE /* Pods-CryptoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoTests/Pods-CryptoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -442,6 +446,7 @@
 				E68DAD4523D4A9E600E0C793 /* LoginService.swift */,
 				E68DAD2B23D4A9DA00E0C793 /* Info.plist */,
 				E68DAD6F23E7146E00E0C793 /* User.swift */,
+				E6BCE4E923F0464A0097D297 /* OTPService.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -449,6 +454,7 @@
 		E68DAD3623D4A9DA00E0C793 /* AuthTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6BCE4EB23F13E010097D297 /* LoginServiceTest.swift */,
 				E68DAD3723D4A9DA00E0C793 /* AuthTests.swift */,
 				E68DAD3923D4A9DA00E0C793 /* Info.plist */,
 			);
@@ -826,9 +832,9 @@
 			projectRoot = "";
 			targets = (
 				E68DACD023D474C600E0C793 /* ModularApp */,
+				E68DACE623D474C900E0C793 /* ModularAppTests */,
 				E68DAD2723D4A9DA00E0C793 /* SKAuth */,
 				E68DAD2F23D4A9DA00E0C793 /* AuthTests */,
-				E68DACE623D474C900E0C793 /* ModularAppTests */,
 				E68DAD4E23E6BBCE00E0C793 /* SKAPI */,
 				E68DAD5623E6BBCE00E0C793 /* APITests */,
 				E68DAD7B23E81D1300E0C793 /* SKCommon */,
@@ -1135,6 +1141,7 @@
 			files = (
 				E68DACD923D474C600E0C793 /* LoginViewController.swift in Sources */,
 				E68DAD6E23E7019900E0C793 /* Composer.swift in Sources */,
+				E6BCE4EA23F0464A0097D297 /* OTPService.swift in Sources */,
 				E68DACD523D474C600E0C793 /* AppDelegate.swift in Sources */,
 				E68DACD723D474C600E0C793 /* SceneDelegate.swift in Sources */,
 			);
@@ -1162,6 +1169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E68DAD3823D4A9DA00E0C793 /* AuthTests.swift in Sources */,
+				E6BCE4ED23F140BB0097D297 /* LoginServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

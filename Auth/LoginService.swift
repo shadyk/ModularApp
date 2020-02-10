@@ -10,32 +10,13 @@ import Foundation
 import Alamofire
 import SKAPI
 
-public typealias LoginCompletion = (Bool,User) -> Void
-public typealias LoginClosure = (String, LoginCompletion) -> Void
-
-public protocol LoginProtocol {
-    func success()
-    func failed()
+enum MainResult {
+    case success
+    case Failure(Error)
 }
 
-
-public struct LoginParams {
-    public var username : String?
-    public var pass : String?
-
-    public init(username: String, pass:String){
-        
-    }
-}
-
-public class LoginService {
-    let params : LoginParams
-    let delegate : LoginProtocol?
-
-    public init(params : LoginParams, delegate:LoginProtocol){
-        self.params = params
-        self.delegate = delegate
-    }
+enum LoginResult{
+    case success(User)
 }
 
 extension ApiClient {
